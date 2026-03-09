@@ -1,0 +1,10 @@
+[custom.all.idris_to_erlang]
+type = "local"
+path = "."
+ipkg = "idris_to_erlang.ipkg"
+test = "test/test.ipkg"
+
+[custom.all.idris_to_erlang-test]
+type = "local"
+path = "test"
+ipkg = "test.ipkg"
