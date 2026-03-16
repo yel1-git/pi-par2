@@ -1,0 +1,16 @@
+# Idris2 build artifacts
+build/
+
+# Generated Erlang (transpiler output)
+generated/*.erl
+generated/*.beam
+
+# Compiled Erlang
+*.beam
+
+# Erlang crash dumps
+erl_crash.dump
+
+# macOS resource forks
+._*
+.DS_Store

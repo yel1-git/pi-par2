@@ -67,15 +67,22 @@ parMapRedr2 n g e f i =
       fo = foldr2 g e ma  -- PList b ?chks -> Proc b (Su 1)
   in fo
 
-
-cpi : Integer -> Double 
-cpi n = mapRedr (+) 0 (f . index) [1..n] / fromInteger n 
-  where 
-    f : Double -> Double 
+cpi : Integer -> Double
+cpi n = mapRedr (+) 0 (\i => f (index2 i n)) [1..n] / fromInteger n
+  where
+    f : Double -> Double
     f x = 4 / (1 + x * x)
-  
+
     index : Integer -> Double
     index i = fromInteger i - 0.5
 
-    index2 : Integer -> Integer -> Double 
+    index2 : Integer -> Integer -> Double
     index2 i n = index i / fromInteger n
+
+parCpi : (chunkSize : Nat) -> (totalN : Integer)
+      -> PList Integer chks -> Proc Double (Su 1)
+parCpi chunkSize totalN input =
+  parMapRedr2 chunkSize (+) 0.0
+    (\i => let x = (fromInteger i - 0.5) / fromInteger totalN
+           in 4.0 / (1.0 + x * x) / fromInteger totalN)
+    input
