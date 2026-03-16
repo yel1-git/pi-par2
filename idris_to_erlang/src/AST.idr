@@ -184,6 +184,7 @@ mutual
       "&&" => "and"
       "`mod`" => "rem"
       "`div`" => "div"
+      "/" => "/"
       "splitAt" => "lists:split"
 
       fn => "?MODULE:" ++ fn
@@ -201,6 +202,7 @@ mutual
       "<$>" => "fun play2:sync_stream/1"
       "head" => "fun hd/1"
       "tail" => "fun tl/1"
+      "+" => "fun erlang:'+'/2"
       fn => fn
 
   public export 
