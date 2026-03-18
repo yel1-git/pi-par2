@@ -203,6 +203,7 @@ mutual
       "head" => "fun hd/1"
       "tail" => "fun tl/1"
       "+" => "fun erlang:'+'/2"
+      "PNil" => "pnil"
       fn => fn
 
   public export 

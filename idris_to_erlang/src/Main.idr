@@ -36,7 +36,7 @@ main = do
   args <- getArgs
   let rawName = case args of
                   (_ :: f :: _) => f
-                  _ => "ParMatMul.idr"
+                  _ => "ParCpi2.idr"
   let fName = resolveInput rawName
 
   let srcLoc = PhysicalIdrSrc (mkModuleIdent Nothing "idris_to_erlang")

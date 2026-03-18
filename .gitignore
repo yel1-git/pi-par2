@@ -2,7 +2,6 @@
 build/
 
 # Generated Erlang (transpiler output)
-generated/*.erl
 generated/*.beam
 
 # Compiled Erlang

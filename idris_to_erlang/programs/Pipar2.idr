@@ -20,6 +20,23 @@ procN : (a -> b) -> (n : Nat) -> Vect n (Proc (a -> b) O) -- derived
 -- apply
 
 
+-- apply function to a process 
+infixr 4 <#$>
+public export 
+(<#$>) : Proc a (Su n) -> (f : a -> b) -> Proc b (Su n)
+
+infixr 4 <#$$>
+public export 
+(<#$$>) : (f : a -> b -> c) 
+       -> Proc a (Su n) 
+       -> Proc b (Su n) 
+       -> Proc c (Su n)
+
+-- fold in a process
+infixr 4 <#++>
+public export
+(<#++>) : Proc a (Su n) -> (f : a -> a -> a) -> a -> Proc a (Su 1)
+
 infixr 4 <#>
 public export
 (<#>) : Proc (a -> b) O -> a -> Proc b (Su 1) 
