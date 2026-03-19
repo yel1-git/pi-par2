@@ -50,8 +50,8 @@ data PList : (a : Type)
     PNilChkHom : PList a (ChkHom (S n))
 
 parMapFol : -- (n : Nat) 
-    (f : Proc a (Su n) -> Proc b (Su 1)) 
- -> PList a (ChkHom n)
+    (f : Proc a (Su (S n)) -> Proc b (Su 1)) 
+ -> PList a (ChkHom (S n))
  -> PList b Flat
 -- 1 parMapFol f PNil             impossible 
 -- 2 parMapFol f (PCons hd tl)    impossible 
@@ -77,12 +77,6 @@ foldr2 f a (PConsChkHom hd tl) = let hd' = (<$$$>) hd
                                      u   = (<#$$>) f r res
                                  in u
 
-{-
-splitIntoN2 : (n : Nat) 
-    -> PList a chks
-    -> PList a (ChkHom n)  -- with each element being a proc with n things
--}
-
 mapRedr3 : (g : b -> b -> b) 
   -> (e : b)
   -> (f : a -> b) 
@@ -92,16 +86,45 @@ mapRedr3 : (g : b -> b -> b)
 mapRedr3 g e f n l = (<#++>) (l <#$> f) g e
 
 
+vectToPList : (i : Vect m (Vect (S n) a)) -> PList a (ChkHom (S n))
+vectToPList [] = PNilChkHom 
+vectToPList (x::xs) =  let pr = proc (\x => x)
+                           pr2 = pr <##> x
+                       in     
+                       PConsChkHom pr2 (vectToPList xs)
+
 parMapRedr2 : (n : Nat) -> (g : b -> b -> b) -> (e : b) 
     -> (f : a -> b) 
-    -> (i : PList a chks) 
+    -> (i : PList a (ChkHom (S n)))
     -> Proc b (Su 1)
 parMapRedr2 n g e f i = 
- let s  = splitIntoN2 n i -- PList a (Chk x y)
-     f' = mapRedr3 g e f n-- Plist a Flat -> Proc b (Su 1)
-     ma = parMapFol f'  s -- PList a ?chk -> PList (Proc b (Su 1)) ?chk
+ let -- s  = splitIntoN2 n i -- PList a (Chk x y)
+     f' = mapRedr3 g e f (S n)-- Plist a Flat -> Proc b (Su 1)
+     ma = parMapFol f'  i -- PList a ?chk -> PList (Proc b (Su 1)) ?chk
      fo = foldr2 g e ma  -- PList b ?chks -> Proc b (Su 1)
  in fo
+
+f : Double -> Double
+f x = 4 / (1 + x * x)
+ 
+index : Integer -> Double
+index i = cast i - 0.5
+ 
+index2 : Integer -> Integer -> Double
+index2 i n = index i / cast n
+
+
+parCpi : (nw : Nat)
+      -> (n : Nat) 
+      -> (n2 : Integer) 
+      -> (prf : modNat (S nw) n = 0)
+      -> (i : Vect n Integer) -> Double
+parCpi (S nw) n n2 prf v =  
+                let i = chunk3 v n (S nw) prf 
+                    r = (<$>) (parMapRedr2 ((divNat (S nw) n)) (+) 0 (\ind => f (index2 ind (fromInteger n2))) (vectToPList i))
+                in (snd r) / cast n2
+parCpi Z _ _ _ _ = 0.0
+
 
 {-
 parCpi : (chunkSize : Nat) -> (totalN : Integer)

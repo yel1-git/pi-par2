@@ -20,11 +20,26 @@ foldr2(N, F,A,{pconschkhom, Hd,Tl}) ->
     U = play2:app_stream_bin( F  , N, R  , Res  ) ,
     U .
 
-mapRedr3(CN,G,E,F,N,L) -> play2:app_fold( CN,  play2:app_stream_3(CN, L, F  )  , G  , E  ) .
+mapRedr3(CN, G,E,F,N,L) -> play2:app_fold(CN, play2:app_stream_3(CN, L, F  )  , G  , E  ) .
+
+vectToPList([]) -> nilchkhom ;
+vectToPList(([X|Xs])) -> {Pid, Sus} = play2:process( ( fun ( X ) -> X  end  ) ),
+                         Pr2 = play2:app_stream2({Pid, Sus}  , X ),
+                         {pconschkhom, Pr2  ,  ?MODULE:vectToPList( Xs  ) } .
+
+f(X) -> 4  /  ( 1  + X  * X  ) .
+
+index(I) -> I  - 0.5 .
+
+index2(I,N) -> ?MODULE:index( I  )  / N .
 
 parMapRedr2(N,G,E,F,I) -> 
-    S = ?MODULE:splitIntoN2( N  , I  ) ,
-    F2 = ?MODULE:mapRedr3( G  , E  , F  , N  ) ,
-    Ma = ?MODULE:parMapFol( F2  , S  ) ,
+    Ma = ?MODULE:parMapFol( fun(X) -> ?MODULE:mapRedr3(N, G  , E  , F  , N + 1, X  ) end  , I  ) ,
     Fo = ?MODULE:foldr2( G  , E  , Ma  ) ,
     Fo .
+
+parCpi((Nw),N,N2,Prf,V) -> 
+     I = utils:'unshuffle\''( V  , N  ,  (  Nw   )  , Prf  ) ,
+     R = play2:sync_stream(  ( ?MODULE:parMapRedr2(  (  (N /  utils:s( Nw-1  )  ) )  , fun erlang:'+'/2  , 0  ,  ( fun ( Ind ) -> ?MODULE:f(  ( ?MODULE:index2( Ind  ,  ( ( N2  )  )  )  )  )  end  )  ,  ( ?MODULE:vectToPList( I  )  )  )  )  ) ,
+     ( utils:snd2( R  ) )  / N2 ;
+parCpi(0,_,_,_,_) -> 0.0 .

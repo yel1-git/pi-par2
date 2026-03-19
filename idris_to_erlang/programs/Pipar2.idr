@@ -67,6 +67,11 @@ public export
 chunk2 : (Vect n a) -> (n : Nat) -> (m : Nat) 
      -> (prf : m `mod` n = 0) -> Vect n (Vect (m `div` n) a)
 
+-- auxilary chunk
+public export
+chunk3 : (Vect n a) -> (n : Nat) -> (m : Nat) 
+     -> (prf : (S m) `mod` n = 0) -> Vect n (Vect (S (m `div` n)) a)
+
 -- sync
 infixr 4 <$>
 public export

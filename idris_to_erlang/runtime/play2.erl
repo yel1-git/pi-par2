@@ -118,12 +118,12 @@ app_stream_bin(F, N, {Pid1, Sus1}, {Pid2, Sus2}) ->
 % infixr 4 <#$>
 % public export 
 % (<#$>) : Proc a (Su n) -> (f : a -> b) -> Proc b (Su n)
-app_stream_3(N, {Pid, Sus}, F) ->
+app_stream_3(N, Sus, F) ->
     R1 = sync_stream3(N, Sus),
     Sus2 = process(F),
     app_stream(Sus2, R1).
 
-app_fold(N, {Pid, Sus}, F, I) ->
+app_fold(N, Sus, F, I) ->
     R1 = sync_stream3(N, Sus ),
     RSus = process(fun(X) -> lists:foldr(F, I, X) end),
     app_stream(RSus, R1).
