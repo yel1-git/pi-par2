@@ -211,7 +211,10 @@ data ChkKind : Type where
 
   -- each chunk is the same size
   ChkHom  : (n : Nat)
-         -> ChkKind                 
+         -> ChkKind 
+         
+  -- chunk in two dimensions 
+  ChkMat  : (n : Nat) -> (m : Nat) -> ChkKind
 
 public export
 data PList : (a : Type)
