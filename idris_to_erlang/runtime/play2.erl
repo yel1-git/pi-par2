@@ -139,7 +139,7 @@ sync_stream2(Sus, N) ->
         [] -> sync_stream2(Sus, N);
         M ->  %io:format("sync_stream releasing: ~p ~n", [M]),
               [M | sync_stream2(Sus, N-1)]
-    end. 
+    end.
 
 sync_stream3(Sus, N) ->
     R = sync_stream2(Sus, N),
@@ -221,7 +221,30 @@ fib(N) -> fib(N-1) + fib(N-2).
 fibDC([0, T]) -> 0;
 fibDC([1, T]) -> 1;
 fibDC([N, T]) when N < T -> fib(N);
-fibDC([N, T]) when N >= T -> 
+fibDC([N, T]) when N >= T ->
     S1 = app_stream(process(fun fibDC/1), [N-1, T]),
     S2 = app_stream(process(fun fibDC/1), [N-2, T]),
-    sync_stream(S1) + sync_stream(S2). 
+    sync_stream(S1) + sync_stream(S2).
+
+%% split list into chunks of size N
+split_chunk(_, []) -> {[], []};
+split_chunk(0, Xs) -> {[], Xs};
+split_chunk(N, Xs) when N > 0 ->
+    case Xs of
+        [] -> {[], []};
+        _ when N >= length(Xs) -> {Xs, []};
+        _ -> {Chunk, Rest} = lists:split(N, Xs), {Chunk, Rest}
+    end.
+
+%% creates PList (list of Sus PIDs) from chunks
+toPListWithChunk(_F, _ChunkSize, []) -> [];
+toPListWithChunk(F, ChunkSize, Xs) ->
+    {Chunk, Rest} = split_chunk(ChunkSize, Xs),
+    P = process(fun(Y) -> [F(Y)] end),
+    Sus = app_stream(P, Chunk),
+    [Sus | toPListWithChunk(F, ChunkSize, Rest)].
+
+syncPList([]) -> [];
+syncPList([Sus | Rest]) ->
+    [R] = sync_stream(Sus),
+    [R | syncPList(Rest)].
