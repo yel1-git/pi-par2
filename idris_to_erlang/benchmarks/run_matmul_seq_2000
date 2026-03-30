@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+
+cd "$(dirname "$0")/.."
+OUT="benchmarks/output/matmul_seq_2000.txt"
+echo "MatMul Sequential N=2000 - $(date)" > "$OUT"
+
+for ((i=0 ; i < 10 ; i++)); do
+    erl -noinput -eval "parMatMul:run_seq(2000), init:stop()." -pa benchmarks >> "$OUT" 2>&1
+done

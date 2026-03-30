@@ -30,8 +30,13 @@ multiply(N, A, B) -> multiply_internal(A, transpose1(N, B)).
 rangeFrom(Start, 0) -> [];
 rangeFrom(Start, K) when K > 0 -> [Start | rangeFrom(Start+1, K-1)].
 
+
+
+
 computeChunk({Chunk, MatB}) ->
     lists:map(fun(Row) -> multiply_row_by_col(Row, MatB) end, Chunk).
+
+
 
 parMatMul(ChunkSize, MatA, MatB) ->
     TransposedB = transpose1(ChunkSize, MatB),
@@ -41,7 +46,15 @@ parMatMul(ChunkSize, MatA, MatB) ->
     lists:append(Results).
 
 run(Nw, Size) ->
+    erlang:system_flag(schedulers_online, Nw),
     Row = rangeFrom(1, Size),
     MatA = lists:duplicate(Size, Row),
     MatB = MatA,
-    parMatMul(Nw, MatA, MatB).
+    ChunkSize = Size div Nw,
+    io:format("MatMul ~p workers: ~p~n", [Nw, sk_profile:benchmark(fun parMatMul/3, [ChunkSize, MatA, MatB], 1)]).
+
+run_seq(Size) ->
+    Row = rangeFrom(1, Size),
+    MatA = lists:duplicate(Size, Row),
+    MatB = MatA,
+    io:format("MatMul seq: ~p~n", [sk_profile:benchmark(fun multiply/3, [Size, MatA, MatB], 1)]).

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+
+cd "$(dirname "$0")/.."
+OUT="benchmarks/output/queens_seq_12.txt"
+echo "Queens Sequential N=12 - $(date)" > "$OUT"
+
+for ((i=0 ; i < 10 ; i++)); do
+    erl -noinput -eval "parQueens:run_seq(12), init:stop()." -pa benchmarks >> "$OUT" 2>&1
+done

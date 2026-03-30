@@ -44,10 +44,10 @@ process_function_stream(Fun, Sus) ->
 
 % process : (f : [a] -> [b]) -> Process [a] [b]
 process(F) ->
-    io:format("processing ~n", []),
+    % io:format("processing ~n", []),
     Sus = spawn(play2, drain_stream, []),
     Pid = spawn(play2, process_function_stream, [F, Sus]) ,
-    io:format("processed ~n", []),
+    % io:format("processed ~n", []),
     {Pid, Sus}.
 
 compF({Pid1, Sus1}, {Pid2, Sus2}, Sus) ->

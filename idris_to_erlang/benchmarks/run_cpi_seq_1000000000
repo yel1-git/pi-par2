@@ -1,0 +1,11 @@
+#!/bin/bash
+
+
+
+cd "$(dirname "$0")/.."
+OUT="benchmarks/output/cpi_seq_1000000000.txt"
+echo "CPI Sequential N=1000000000 - $(date)" > "$OUT"
+
+for ((i=0 ; i < 10 ; i++)); do
+    erl -noinput -eval "parCpi:run_seq(1000000000), init:stop()." -pa benchmarks >> "$OUT" 2>&1
+done

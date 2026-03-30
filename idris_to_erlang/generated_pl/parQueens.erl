@@ -63,5 +63,10 @@ parQueens(ChunkSize, Input) ->
     lists:foldr(fun(A,B) -> A++B end, [], Results).
 
 run(Nw, Size) ->
+    erlang:system_flag(schedulers_online, Nw),
     Input = mkMsg(Size, lists:seq(1, Size)),
-    parQueens(Nw, Input).
+    ChunkSize = Size div Nw,
+    io:format("Queens ~p workers: ~p~n", [Nw, sk_profile:benchmark(fun parQueens/2, [ChunkSize, Input], 1)]).
+
+run_seq(Size) ->
+    io:format("Queens seq: ~p~n", [sk_profile:benchmark(fun rainhas/1, [Size], 1)]).

@@ -24,3 +24,12 @@ parCpi(ChunkSize, N, Input) ->
     PList = toPListWithChunk(F, ChunkSize, Input),
     Results = syncPList(PList),
     lists:foldr(fun erlang:'+'/2, 0.0, Results).
+
+run(Nw, N) ->
+    erlang:system_flag(schedulers_online, Nw),
+    Input = lists:seq(1, N),
+    ChunkSize = N div Nw,
+    io:format("CPI ~p workers: ~p~n", [Nw, sk_profile:benchmark(fun parCpi/3, [ChunkSize, N, Input], 1)]).
+
+run_seq(N) ->
+    io:format("CPI seq: ~p~n", [sk_profile:benchmark(fun cpi/1, [N], 1)]).

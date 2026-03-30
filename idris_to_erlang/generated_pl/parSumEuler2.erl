@@ -22,3 +22,12 @@ parSumEuler(ChunkSize, Input) ->
     PList = toPListWithChunk(F, ChunkSize, Input),
     Results = syncPList(PList),
     lists:foldr(fun(A,B) -> A+B end, 0, Results).
+
+run(Nw, Size) ->
+    erlang:system_flag(schedulers_online, Nw),
+    List = mkList(Size),
+    ChunkSize = Size div Nw,
+    io:format("SumEuler ~p workers: ~p~n", [Nw, sk_profile:benchmark(fun parSumEuler/2, [ChunkSize, List], 1)]).
+
+run_seq(Size) ->
+    io:format("SumEuler seq: ~p~n", [sk_profile:benchmark(fun sumEuler/1, [Size], 1)]).

@@ -1,0 +1,53 @@
+#!/bin/bash
+
+
+
+cd "$(dirname "$0")"
+
+echo "Running all benchmarks..."
+
+
+for n in 10000 20000 40000; do
+    echo "=== SumEuler Seq $n ==="
+    ./run_sumeuler_seq_$n
+done
+
+
+for n in 10000 20000 40000; do
+    echo "=== SumEuler Par $n ==="
+    ./run_sumeuler_par_$n
+done
+
+
+for n in 1000 2000 4000; do
+    echo "=== MatMul Seq $n ==="
+    ./run_matmul_seq_$n
+done
+
+
+for n in 1000 2000 4000; do
+    echo "=== MatMul Par $n ==="
+    ./run_matmul_par_$n
+done
+
+
+echo "=== Queens Seq 12 ==="
+./run_queens_seq_12
+
+
+echo "=== Queens Par 12 ==="
+./run_queens_par_12
+
+
+for n in 1000000 10000000 100000000 1000000000; do
+    echo "=== CPI Seq $n ==="
+    ./run_cpi_seq_$n
+done
+
+
+for n in 1000000 10000000 100000000 1000000000; do
+    echo "=== CPI Par $n ==="
+    ./run_cpi_par_$n
+done
+
+echo "All benchmarks complete!"

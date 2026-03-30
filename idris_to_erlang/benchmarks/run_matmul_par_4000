@@ -1,0 +1,14 @@
+#!/bin/bash
+
+
+
+cd "$(dirname "$0")/.."
+OUT="benchmarks/output/matmul_par_4000.txt"
+echo "MatMul Parallel N=4000 - $(date)" > "$OUT"
+
+for workers in 2 4 6 8 10 12 14 16 18 20 22 24 26 28; do
+    echo "=== $workers workers ===" >> "$OUT"
+    for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval "parMatMul:run($workers, 4000), init:stop()." -pa benchmarks >> "$OUT" 2>&1
+    done
+done
