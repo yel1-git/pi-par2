@@ -9,13 +9,30 @@ get_heads([R|Rs]) -> [hd(R) | get_heads(Rs)].
 get_tails([]) -> [];
 get_tails([R|Rs]) -> [tl(R) | get_tails(Rs)].
 
-transpose1(_, []) -> [];
-transpose1(_, [[]|_]) -> [];
-transpose1(N, Rows) ->
-    [get_heads(Rows) | transpose1(N, get_tails(Rows))].
+%transpose1(_, []) -> [];
+%transpose1(_, [[]|_]) -> [];
+%transpose1(N, Rows) ->
+%    [get_heads(Rows) | transpose1(N, get_tails(Rows))].
 
-dot_product([], []) -> 0;
-dot_product([A|As], [B|Bs]) -> A * B + dot_product(As, Bs).
+%dot_product([], []) -> 0;
+%dot_product([A|As], [B|Bs]) -> A * B + dot_product(As, Bs).
+
+
+fst2 (A) -> element(1, A).
+
+snd2 (A) -> element(2, A).
+
+transpose1 ( ([[]|N]) )  ->
+        [];
+transpose1 ( B )  ->
+        [ ( lists:map(  ( fun ( X ) -> hd( X  )  end  )  , B  )  )  | ?MODULE:transpose1(  ( lists:map(  ( fun ( X ) -> tl( X  )  end  )  , B  )  )  ) ]
+.
+red ( Pair , Sum )  ->
+         ( fst2( Pair  )  )  *  ( snd2( Pair  )  )  + Sum
+.
+dot_product ( A , B )  ->
+        lists:foldl( fun red/2  , 0  ,  ( lists:zip( A  , B  )  )  ).
+
 
 multiply_row_by_col(_, []) -> [];
 multiply_row_by_col(Row, [Col|Cols]) ->
@@ -25,23 +42,25 @@ multiply_internal([], _) -> [];
 multiply_internal([Row|Rows], B) ->
     [multiply_row_by_col(Row, B) | multiply_internal(Rows, B)].
 
-multiply(N, A, B) -> multiply_internal(A, transpose1(N, B)).
+multiply(N, A, B) -> multiply_internal(A,  B).
 
 rangeFrom(Start, 0) -> [];
 rangeFrom(Start, K) when K > 0 -> [Start | rangeFrom(Start+1, K-1)].
 
-% computeChunk({Chunk, MatB}) ->
-%     lists:map(fun(Row) -> multiply_row_by_col(Row, MatB) end, Chunk).
-
 computeChunk({Chunk, MatB}) ->
-    multiply_row_by_col(Chunk, MatB).
+   lists:map(fun(Row) -> multiply_row_by_col(Row, MatB) end, Chunk).
+
+% computeChunk({Chunk, MatB}) ->
+%    multiply_row_by_col(Chunk, MatB).
 
 parMatMul(ChunkSize, MatA, MatB) ->
-    TransposedB = transpose1(ChunkSize, MatB),
-    F = fun(Chunk) -> ?MODULE:computeChunk({Chunk, TransposedB}) end,
+    % TransposedB = transpose1(ChunkSize, MatB),
+    F = fun(Chunk) -> ?MODULE:computeChunk({Chunk, MatB}) end,
     PList = toPListWithChunk(F, ChunkSize, MatA),
     Results = syncPList(PList),
     lists:append(Results).
+    % PList. 
+
 
 mkRandomMatrix(Size) ->
     rand:seed(exs64, {42,42,42}),
@@ -58,5 +77,5 @@ run(Nw, Size) ->
 run_seq(Size) ->
     Row = rangeFrom(1, Size),
     MatA = mkRandomMatrix(Size),
-    MatB = MatA,
+    MatB = transpose1(MatA),
     io:format("MatMul seq: ~p~n", [sk_profile:benchmark(fun multiply/3, [Size, MatA, MatB], 1)]).
