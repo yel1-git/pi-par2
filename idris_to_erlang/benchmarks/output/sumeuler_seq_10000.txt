@@ -1,0 +1,61 @@
+SumEuler Sequential N=10000 - Thu Apr  2 16:27:48 BST 2026
+SumEuler seq: [{n,1},
+               {min,1747065},
+               {max,1747065},
+               {med,1747065},
+               {mean,1747065.0},
+               {std_dev,0.0}]
+SumEuler seq: [{n,1},
+               {min,1732131},
+               {max,1732131},
+               {med,1732131},
+               {mean,1732131.0},
+               {std_dev,0.0}]
+SumEuler seq: [{n,1},
+               {min,1514002},
+               {max,1514002},
+               {med,1514002},
+               {mean,1514002.0},
+               {std_dev,0.0}]
+SumEuler seq: [{n,1},
+               {min,1787599},
+               {max,1787599},
+               {med,1787599},
+               {mean,1787599.0},
+               {std_dev,0.0}]
+SumEuler seq: [{n,1},
+               {min,1708443},
+               {max,1708443},
+               {med,1708443},
+               {mean,1708443.0},
+               {std_dev,0.0}]
+SumEuler seq: [{n,1},
+               {min,1791492},
+               {max,1791492},
+               {med,1791492},
+               {mean,1791492.0},
+               {std_dev,0.0}]
+SumEuler seq: [{n,1},
+               {min,1764982},
+               {max,1764982},
+               {med,1764982},
+               {mean,1764982.0},
+               {std_dev,0.0}]
+SumEuler seq: [{n,1},
+               {min,1717886},
+               {max,1717886},
+               {med,1717886},
+               {mean,1717886.0},
+               {std_dev,0.0}]
+SumEuler seq: [{n,1},
+               {min,1787139},
+               {max,1787139},
+               {med,1787139},
+               {mean,1787139.0},
+               {std_dev,0.0}]
+SumEuler seq: [{n,1},
+               {min,1753289},
+               {max,1753289},
+               {med,1753289},
+               {mean,1753289.0},
+               {std_dev,0.0}]

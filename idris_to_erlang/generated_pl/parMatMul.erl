@@ -30,13 +30,11 @@ multiply(N, A, B) -> multiply_internal(A, transpose1(N, B)).
 rangeFrom(Start, 0) -> [];
 rangeFrom(Start, K) when K > 0 -> [Start | rangeFrom(Start+1, K-1)].
 
-
-
+% computeChunk({Chunk, MatB}) ->
+%     lists:map(fun(Row) -> multiply_row_by_col(Row, MatB) end, Chunk).
 
 computeChunk({Chunk, MatB}) ->
-    lists:map(fun(Row) -> multiply_row_by_col(Row, MatB) end, Chunk).
-
-
+    multiply_row_by_col(Chunk, MatB).
 
 parMatMul(ChunkSize, MatA, MatB) ->
     TransposedB = transpose1(ChunkSize, MatB),
@@ -45,16 +43,20 @@ parMatMul(ChunkSize, MatA, MatB) ->
     Results = syncPList(PList),
     lists:append(Results).
 
+mkRandomMatrix(Size) ->
+    rand:seed(exs64, {42,42,42}),
+    [[rand:uniform(1000) || _ <- lists:seq(1, Size)] || _ <- lists:seq(1, Size)].
+
 run(Nw, Size) ->
     erlang:system_flag(schedulers_online, Nw),
     Row = rangeFrom(1, Size),
-    MatA = lists:duplicate(Size, Row),
+    MatA = mkRandomMatrix(Size),
     MatB = MatA,
     ChunkSize = Size div Nw,
     io:format("MatMul ~p workers: ~p~n", [Nw, sk_profile:benchmark(fun parMatMul/3, [ChunkSize, MatA, MatB], 1)]).
 
 run_seq(Size) ->
     Row = rangeFrom(1, Size),
-    MatA = lists:duplicate(Size, Row),
+    MatA = mkRandomMatrix(Size),
     MatB = MatA,
     io:format("MatMul seq: ~p~n", [sk_profile:benchmark(fun multiply/3, [Size, MatA, MatB], 1)]).
