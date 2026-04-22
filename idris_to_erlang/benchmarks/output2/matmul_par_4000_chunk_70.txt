@@ -1,0 +1,26 @@
+MatMul Parallel N=4000 chunk=70 - Tue Apr 21 04:07:45 BST 2026
+=== 2 workers ===
+MatMul 2 workers (chunk=70): [{n,1},
+                              {min,7662953615},
+                              {max,7662953615},
+                              {med,7662953615},
+                              {mean,7662953615.0},
+                              {std_dev,0.0}]
+MatMul 2 workers (chunk=70): [{n,1},
+                              {min,7725810057},
+                              {max,7725810057},
+                              {med,7725810057},
+                              {mean,7725810057.0},
+                              {std_dev,0.0}]
+MatMul 2 workers (chunk=70): [{n,1},
+                              {min,6360888806},
+                              {max,6360888806},
+                              {med,6360888806},
+                              {mean,6360888806.0},
+                              {std_dev,0.0}]
+MatMul 2 workers (chunk=70): [{n,1},
+                              {min,6228616445},
+                              {max,6228616445},
+                              {med,6228616445},
+                              {mean,6228616445.0},
+                              {std_dev,0.0}]

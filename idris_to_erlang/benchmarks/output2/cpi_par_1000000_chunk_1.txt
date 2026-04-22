@@ -1,0 +1,145 @@
+CPI Parallel N=1000000 chunk=1 - Wed Apr 15 17:10:24 BST 2026
+=== 2 workers ===
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(2, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+=== 4 workers ===
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(4, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+=== 6 workers ===
+Error! Failed to eval: parCpi:run(6, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(6, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(6, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(6, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parCpi:run(6, 1000000, 1), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parCpi,parCpi,3,[{file,"idris_to_erlang/generated_pl/parCpi.erl"},{line,24}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+=== 8 workers ===
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution

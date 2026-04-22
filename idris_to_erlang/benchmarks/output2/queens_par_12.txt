@@ -1,0 +1,775 @@
+Queens Parallel N=12 - Fri Apr  3 19:16:06 BST 2026
+=== 2 workers ===
+Queens 2 workers: [{n,1},
+                   {min,64553093},
+                   {max,64553093},
+                   {med,64553093},
+                   {mean,64553093.0},
+                   {std_dev,0.0}]
+Queens 2 workers: [{n,1},
+                   {min,62569981},
+                   {max,62569981},
+                   {med,62569981},
+                   {mean,62569981.0},
+                   {std_dev,0.0}]
+Queens 2 workers: [{n,1},
+                   {min,61578950},
+                   {max,61578950},
+                   {med,61578950},
+                   {mean,61578950.0},
+                   {std_dev,0.0}]
+Queens 2 workers: [{n,1},
+                   {min,62027382},
+                   {max,62027382},
+                   {med,62027382},
+                   {mean,62027382.0},
+                   {std_dev,0.0}]
+Queens 2 workers: [{n,1},
+                   {min,62724380},
+                   {max,62724380},
+                   {med,62724380},
+                   {mean,62724380.0},
+                   {std_dev,0.0}]
+Queens 2 workers: [{n,1},
+                   {min,63589702},
+                   {max,63589702},
+                   {med,63589702},
+                   {mean,63589702.0},
+                   {std_dev,0.0}]
+Queens 2 workers: [{n,1},
+                   {min,61887846},
+                   {max,61887846},
+                   {med,61887846},
+                   {mean,61887846.0},
+                   {std_dev,0.0}]
+Queens 2 workers: [{n,1},
+                   {min,59918949},
+                   {max,59918949},
+                   {med,59918949},
+                   {mean,59918949.0},
+                   {std_dev,0.0}]
+Queens 2 workers: [{n,1},
+                   {min,61727162},
+                   {max,61727162},
+                   {med,61727162},
+                   {mean,61727162.0},
+                   {std_dev,0.0}]
+Queens 2 workers: [{n,1},
+                   {min,62567604},
+                   {max,62567604},
+                   {med,62567604},
+                   {mean,62567604.0},
+                   {std_dev,0.0}]
+=== 4 workers ===
+Queens 4 workers: [{n,1},
+                   {min,32181064},
+                   {max,32181064},
+                   {med,32181064},
+                   {mean,32181064.0},
+                   {std_dev,0.0}]
+Queens 4 workers: [{n,1},
+                   {min,32025380},
+                   {max,32025380},
+                   {med,32025380},
+                   {mean,32025380.0},
+                   {std_dev,0.0}]
+Queens 4 workers: [{n,1},
+                   {min,32030147},
+                   {max,32030147},
+                   {med,32030147},
+                   {mean,32030147.0},
+                   {std_dev,0.0}]
+Queens 4 workers: [{n,1},
+                   {min,32065863},
+                   {max,32065863},
+                   {med,32065863},
+                   {mean,32065863.0},
+                   {std_dev,0.0}]
+Queens 4 workers: [{n,1},
+                   {min,32301022},
+                   {max,32301022},
+                   {med,32301022},
+                   {mean,32301022.0},
+                   {std_dev,0.0}]
+Queens 4 workers: [{n,1},
+                   {min,32012763},
+                   {max,32012763},
+                   {med,32012763},
+                   {mean,32012763.0},
+                   {std_dev,0.0}]
+Queens 4 workers: [{n,1},
+                   {min,32806911},
+                   {max,32806911},
+                   {med,32806911},
+                   {mean,32806911.0},
+                   {std_dev,0.0}]
+Queens 4 workers: [{n,1},
+                   {min,32093728},
+                   {max,32093728},
+                   {med,32093728},
+                   {mean,32093728.0},
+                   {std_dev,0.0}]
+Queens 4 workers: [{n,1},
+                   {min,31927947},
+                   {max,31927947},
+                   {med,31927947},
+                   {mean,31927947.0},
+                   {std_dev,0.0}]
+Queens 4 workers: [{n,1},
+                   {min,31902674},
+                   {max,31902674},
+                   {med,31902674},
+                   {mean,31902674.0},
+                   {std_dev,0.0}]
+=== 6 workers ===
+Queens 6 workers: [{n,1},
+                   {min,22627970},
+                   {max,22627970},
+                   {med,22627970},
+                   {mean,22627970.0},
+                   {std_dev,0.0}]
+Queens 6 workers: [{n,1},
+                   {min,23008092},
+                   {max,23008092},
+                   {med,23008092},
+                   {mean,23008092.0},
+                   {std_dev,0.0}]
+Queens 6 workers: [{n,1},
+                   {min,22299660},
+                   {max,22299660},
+                   {med,22299660},
+                   {mean,22299660.0},
+                   {std_dev,0.0}]
+Queens 6 workers: [{n,1},
+                   {min,22134648},
+                   {max,22134648},
+                   {med,22134648},
+                   {mean,22134648.0},
+                   {std_dev,0.0}]
+Queens 6 workers: [{n,1},
+                   {min,22163457},
+                   {max,22163457},
+                   {med,22163457},
+                   {mean,22163457.0},
+                   {std_dev,0.0}]
+Queens 6 workers: [{n,1},
+                   {min,22465249},
+                   {max,22465249},
+                   {med,22465249},
+                   {mean,22465249.0},
+                   {std_dev,0.0}]
+Queens 6 workers: [{n,1},
+                   {min,22648273},
+                   {max,22648273},
+                   {med,22648273},
+                   {mean,22648273.0},
+                   {std_dev,0.0}]
+Queens 6 workers: [{n,1},
+                   {min,22528966},
+                   {max,22528966},
+                   {med,22528966},
+                   {mean,22528966.0},
+                   {std_dev,0.0}]
+Queens 6 workers: [{n,1},
+                   {min,22430684},
+                   {max,22430684},
+                   {med,22430684},
+                   {mean,22430684.0},
+                   {std_dev,0.0}]
+Queens 6 workers: [{n,1},
+                   {min,22412134},
+                   {max,22412134},
+                   {med,22412134},
+                   {mean,22412134.0},
+                   {std_dev,0.0}]
+=== 8 workers ===
+Queens 8 workers: [{n,1},
+                   {min,14988184},
+                   {max,14988184},
+                   {med,14988184},
+                   {mean,14988184.0},
+                   {std_dev,0.0}]
+Queens 8 workers: [{n,1},
+                   {min,14645911},
+                   {max,14645911},
+                   {med,14645911},
+                   {mean,14645911.0},
+                   {std_dev,0.0}]
+Queens 8 workers: [{n,1},
+                   {min,14763761},
+                   {max,14763761},
+                   {med,14763761},
+                   {mean,14763761.0},
+                   {std_dev,0.0}]
+Queens 8 workers: [{n,1},
+                   {min,14719996},
+                   {max,14719996},
+                   {med,14719996},
+                   {mean,14719996.0},
+                   {std_dev,0.0}]
+Queens 8 workers: [{n,1},
+                   {min,14683902},
+                   {max,14683902},
+                   {med,14683902},
+                   {mean,14683902.0},
+                   {std_dev,0.0}]
+Queens 8 workers: [{n,1},
+                   {min,14740677},
+                   {max,14740677},
+                   {med,14740677},
+                   {mean,14740677.0},
+                   {std_dev,0.0}]
+Queens 8 workers: [{n,1},
+                   {min,14740160},
+                   {max,14740160},
+                   {med,14740160},
+                   {mean,14740160.0},
+                   {std_dev,0.0}]
+Queens 8 workers: [{n,1},
+                   {min,14632373},
+                   {max,14632373},
+                   {med,14632373},
+                   {mean,14632373.0},
+                   {std_dev,0.0}]
+Queens 8 workers: [{n,1},
+                   {min,14472897},
+                   {max,14472897},
+                   {med,14472897},
+                   {mean,14472897.0},
+                   {std_dev,0.0}]
+Queens 8 workers: [{n,1},
+                   {min,15772214},
+                   {max,15772214},
+                   {med,15772214},
+                   {mean,15772214.0},
+                   {std_dev,0.0}]
+=== 10 workers ===
+Queens 10 workers: [{n,1},
+                    {min,13046081},
+                    {max,13046081},
+                    {med,13046081},
+                    {mean,13046081.0},
+                    {std_dev,0.0}]
+Queens 10 workers: [{n,1},
+                    {min,12845618},
+                    {max,12845618},
+                    {med,12845618},
+                    {mean,12845618.0},
+                    {std_dev,0.0}]
+Queens 10 workers: [{n,1},
+                    {min,12937894},
+                    {max,12937894},
+                    {med,12937894},
+                    {mean,12937894.0},
+                    {std_dev,0.0}]
+Queens 10 workers: [{n,1},
+                    {min,13082600},
+                    {max,13082600},
+                    {med,13082600},
+                    {mean,1.30826e7},
+                    {std_dev,0.0}]
+Queens 10 workers: [{n,1},
+                    {min,12743931},
+                    {max,12743931},
+                    {med,12743931},
+                    {mean,12743931.0},
+                    {std_dev,0.0}]
+Queens 10 workers: [{n,1},
+                    {min,12878786},
+                    {max,12878786},
+                    {med,12878786},
+                    {mean,12878786.0},
+                    {std_dev,0.0}]
+Queens 10 workers: [{n,1},
+                    {min,12812358},
+                    {max,12812358},
+                    {med,12812358},
+                    {mean,12812358.0},
+                    {std_dev,0.0}]
+Queens 10 workers: [{n,1},
+                    {min,12914815},
+                    {max,12914815},
+                    {med,12914815},
+                    {mean,12914815.0},
+                    {std_dev,0.0}]
+Queens 10 workers: [{n,1},
+                    {min,12827539},
+                    {max,12827539},
+                    {med,12827539},
+                    {mean,12827539.0},
+                    {std_dev,0.0}]
+Queens 10 workers: [{n,1},
+                    {min,12936849},
+                    {max,12936849},
+                    {med,12936849},
+                    {mean,12936849.0},
+                    {std_dev,0.0}]
+=== 12 workers ===
+Queens 12 workers: [{n,1},
+                    {min,12517377},
+                    {max,12517377},
+                    {med,12517377},
+                    {mean,12517377.0},
+                    {std_dev,0.0}]
+Queens 12 workers: [{n,1},
+                    {min,12584590},
+                    {max,12584590},
+                    {med,12584590},
+                    {mean,12584590.0},
+                    {std_dev,0.0}]
+Queens 12 workers: [{n,1},
+                    {min,12653594},
+                    {max,12653594},
+                    {med,12653594},
+                    {mean,12653594.0},
+                    {std_dev,0.0}]
+Queens 12 workers: [{n,1},
+                    {min,12575876},
+                    {max,12575876},
+                    {med,12575876},
+                    {mean,12575876.0},
+                    {std_dev,0.0}]
+Queens 12 workers: [{n,1},
+                    {min,12535896},
+                    {max,12535896},
+                    {med,12535896},
+                    {mean,12535896.0},
+                    {std_dev,0.0}]
+Queens 12 workers: [{n,1},
+                    {min,12787496},
+                    {max,12787496},
+                    {med,12787496},
+                    {mean,12787496.0},
+                    {std_dev,0.0}]
+Queens 12 workers: [{n,1},
+                    {min,12540423},
+                    {max,12540423},
+                    {med,12540423},
+                    {mean,12540423.0},
+                    {std_dev,0.0}]
+Queens 12 workers: [{n,1},
+                    {min,12607537},
+                    {max,12607537},
+                    {med,12607537},
+                    {mean,12607537.0},
+                    {std_dev,0.0}]
+Queens 12 workers: [{n,1},
+                    {min,12739695},
+                    {max,12739695},
+                    {med,12739695},
+                    {mean,12739695.0},
+                    {std_dev,0.0}]
+Queens 12 workers: [{n,1},
+                    {min,12652532},
+                    {max,12652532},
+                    {med,12652532},
+                    {mean,12652532.0},
+                    {std_dev,0.0}]
+=== 14 workers ===
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(14, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+=== 16 workers ===
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(16, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+=== 18 workers ===
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(18, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+=== 20 workers ===
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(20, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+=== 22 workers ===
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(22, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+=== 24 workers ===
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(24, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+=== 26 workers ===
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(26, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+=== 28 workers ===
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done
+Error! Failed to eval: parQueens:run(28, 12), init:stop().
+
+Runtime terminating during boot ({system_limit,[{erlang,spawn,[play2,drain_stream,[]],[{error_info,#{module=>erl_erts_errors}}]},{play2,process,1,[{file,"runtime/play2.erl"},{line,47}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,274}]},{play2,toPListWithChunk,3,[{file,"runtime/play2.erl"},{line,276}]},{parQueens,parQueens,2,[{file,"generated_pl/parQueens.erl"},{line,61}]},{timer,tc,3,[{file,"timer.erl"},{line,633}]},{sk_profile,test_loop,4,[{file,"skel/src/sk_profile.erl"},{line,59}]},{sk_profile,benchmark,3,[{file,"skel/src/sk_profile.erl"},{line,43}]}]})
+
+Crash dump is being written to: erl_crash.dump...done

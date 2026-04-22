@@ -1,0 +1,61 @@
+MatMul Sequential N=500 - Wed Apr  8 20:35:19 BST 2026
+MatMul seq: [{n,1},
+             {min,7308932},
+             {max,7308932},
+             {med,7308932},
+             {mean,7308932.0},
+             {std_dev,0.0}]
+MatMul seq: [{n,1},
+             {min,7967660},
+             {max,7967660},
+             {med,7967660},
+             {mean,7967660.0},
+             {std_dev,0.0}]
+MatMul seq: [{n,1},
+             {min,7455104},
+             {max,7455104},
+             {med,7455104},
+             {mean,7455104.0},
+             {std_dev,0.0}]
+MatMul seq: [{n,1},
+             {min,7120166},
+             {max,7120166},
+             {med,7120166},
+             {mean,7120166.0},
+             {std_dev,0.0}]
+MatMul seq: [{n,1},
+             {min,6730938},
+             {max,6730938},
+             {med,6730938},
+             {mean,6730938.0},
+             {std_dev,0.0}]
+MatMul seq: [{n,1},
+             {min,7111967},
+             {max,7111967},
+             {med,7111967},
+             {mean,7111967.0},
+             {std_dev,0.0}]
+MatMul seq: [{n,1},
+             {min,6009545},
+             {max,6009545},
+             {med,6009545},
+             {mean,6009545.0},
+             {std_dev,0.0}]
+MatMul seq: [{n,1},
+             {min,7120613},
+             {max,7120613},
+             {med,7120613},
+             {mean,7120613.0},
+             {std_dev,0.0}]
+MatMul seq: [{n,1},
+             {min,5974970},
+             {max,5974970},
+             {med,5974970},
+             {mean,5974970.0},
+             {std_dev,0.0}]
+MatMul seq: [{n,1},
+             {min,6472903},
+             {max,6472903},
+             {med,6472903},
+             {mean,6472903.0},
+             {std_dev,0.0}]
