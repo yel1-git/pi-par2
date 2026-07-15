@@ -166,10 +166,12 @@ dc :   (split : a -> (n ** Vect n a))
    ->  (input : a )
    ->  b
 dc split join thre solve input with (thre input)
-    dc split join thre solve input | True = solve input 
+    dc split join thre solve input | True = solve input
     dc split join thre solve input | False =
         let (n ** xs) = split input
             re = procN (dc split join thre solve) n
             reA = re <####> xs
             syn = vectLem1 n ((<$$>) reA)
         in join {n} syn
+
+
