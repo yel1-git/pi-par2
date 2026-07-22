@@ -3,7 +3,8 @@
 
 %% Instrumented drop-in replacement for play2.erl. Same public API and
 %% semantics; adds counters for the costs a reviewer would call
-%% "synchronization overhead" that play2.erl doesn't expose on its own:
+%% "synchronization overhead" and "memory usage" that play2.erl doesn't
+%% expose on its own:
 %%
 %%   compute_time_us  - time worker processes spend inside the user Fun(M)
 %%   wait_time_us     - time the coordinator blocks in sync_stream/2 waiting
@@ -13,6 +14,14 @@
 %%   message_count    - number of unit-of-work messages dispatched via app_stream
 %%   message_bytes    - approx bytes copied for those messages (erlang:external_size),
 %%                       a proxy for inter-process copying/memory cost
+%%   mem_total_peak_bytes / mem_total_mean_bytes       - erlang:memory(total),
+%%   mem_processes_peak_bytes / mem_processes_mean_bytes - erlang:memory(processes),
+%%       sampled every 20ms (see profile/2) by a background process for the
+%%       duration of the profiled call. "total" is the whole VM (atom table,
+%%       code, ets, etc. included); "processes" isolates just the sum of all
+%%       Erlang process heaps, i.e. the part that actually scales with worker
+%%       count/chunk size.
+%%   mem_sample_count - how many samples the peak/mean above are based on
 %%
 %% To use on a benchmark, change its `-import(play2, [...])` (or `play2:`
 %% qualifiers) to play_sync, then wrap the run call in play_sync:profile/1
@@ -21,9 +30,12 @@
 
 %% ---- stats collection ----
 
-stats_keys() ->
+counter_keys() ->
     [compute_time_us, wait_time_us, spawn_time_us,
      spawn_count, message_count, message_bytes].
+
+mem_raw_keys() ->
+    [mem_total_peak, mem_total_sum, mem_processes_peak, mem_processes_sum, mem_sample_count].
 
 ensure_table() ->
     case ets:info(play_sync_stats) of
@@ -38,24 +50,76 @@ ensure_table() ->
 
 reset() ->
     ensure_table(),
-    [ets:insert(play_sync_stats, {K, 0}) || K <- stats_keys()],
+    [ets:insert(play_sync_stats, {K, 0}) || K <- counter_keys() ++ mem_raw_keys()],
     ok.
 
 add(Key, Delta) ->
     ensure_table(),
     ets:update_counter(play_sync_stats, Key, Delta).
 
+update_max(Key, Value) ->
+    ensure_table(),
+    Current = ets:lookup_element(play_sync_stats, Key, 2),
+    case Value > Current of
+        true -> ets:insert(play_sync_stats, {Key, Value});
+        false -> ok
+    end.
+
+raw(Key) ->
+    ensure_table(),
+    ets:lookup_element(play_sync_stats, Key, 2).
+
+mean(SumKey, CountKey) ->
+    Count = raw(CountKey),
+    case Count of
+        0 -> 0;
+        _ -> raw(SumKey) / Count
+    end.
+
 stats() ->
     ensure_table(),
-    [{K, ets:lookup_element(play_sync_stats, K, 2)} || K <- stats_keys()].
+    [{K, raw(K)} || K <- counter_keys()] ++
+    [
+        {mem_total_peak_bytes, raw(mem_total_peak)},
+        {mem_total_mean_bytes, mean(mem_total_sum, mem_sample_count)},
+        {mem_processes_peak_bytes, raw(mem_processes_peak)},
+        {mem_processes_mean_bytes, mean(mem_processes_sum, mem_sample_count)},
+        {mem_sample_count, raw(mem_sample_count)}
+    ].
 
-%% Resets counters, runs Fun0/0, and returns {Result, Stats} where Stats
-%% also includes wall_time_us for the whole call.
-profile(Fun0) ->
+%% ---- memory sampler ----
+
+mem_sample() ->
+    Total = erlang:memory(total),
+    Procs = erlang:memory(processes),
+    update_max(mem_total_peak, Total),
+    add(mem_total_sum, Total),
+    update_max(mem_processes_peak, Procs),
+    add(mem_processes_sum, Procs),
+    add(mem_sample_count, 1).
+
+mem_sampler_loop(IntervalMs) ->
+    receive
+        {stop, ReplyTo} ->
+            ReplyTo ! sampler_stopped
+    after IntervalMs ->
+        mem_sample(),
+        mem_sampler_loop(IntervalMs)
+    end.
+
+%% Resets counters, runs Fun0/0 while sampling memory every IntervalMs, and
+%% returns {Result, Stats} where Stats also includes wall_time_us for the
+%% whole call.
+profile(Fun0) -> profile(Fun0, 20).
+
+profile(Fun0, IntervalMs) ->
     reset(),
+    Sampler = spawn(fun() -> mem_sampler_loop(IntervalMs) end),
     T0 = erlang:monotonic_time(),
     Result = Fun0(),
     T1 = erlang:monotonic_time(),
+    Sampler ! {stop, self()},
+    receive sampler_stopped -> ok after 1000 -> ok end,
     WallUs = erlang:convert_time_unit(T1 - T0, native, microsecond),
     {Result, [{wall_time_us, WallUs} | stats()]}.
 
