@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd "$(dirname "$0")/.."
+OUT="benchmarks/output_sync/cpi_sync_1000000000.txt"
+echo "CPI Parallel (sync-instrumented) N=1000000000 - $(date)" > "$OUT"
+
+for workers in 2 4 6 8 10 12 14 16 18 20 22 24 26 28; do
+    echo "=== $workers workers ===" >> "$OUT"
+    for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval "parCpi_sync:run($workers, 1000000000), init:stop()." -pa benchmarks -pa runtime -pa generated_sync >> "$OUT" 2>&1
+    done
+done

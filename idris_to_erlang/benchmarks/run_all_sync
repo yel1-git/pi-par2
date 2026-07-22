@@ -1,0 +1,27 @@
+#!/bin/bash
+
+
+
+cd "$(dirname "$0")"
+
+echo "Running all sync-instrumented benchmarks..."
+
+
+for n in 10000 20000 40000; do
+    echo "=== SumEuler Sync $n ==="
+    ./run_sumeuler_sync_$n
+done
+
+
+for n in 1000 2000 4000; do
+    echo "=== MatMul Sync $n ==="
+    ./run_matmul_sync_$n
+done
+
+
+for n in 1000000 10000000 100000000 1000000000; do
+    echo "=== CPI Sync $n ==="
+    ./run_cpi_sync_$n
+done
+
+echo "All sync-instrumented benchmarks complete!"

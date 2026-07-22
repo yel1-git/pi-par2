@@ -1,0 +1,5 @@
+#!/bin/bash
+# Quick sanity check for parSumEuler2_sync -- small input, single run, 2 workers.
+
+cd "$(dirname "$0")/.."
+erl -noinput -eval "parSumEuler2_sync:run(2, 500), init:stop()." -pa benchmarks -pa runtime -pa generated_sync

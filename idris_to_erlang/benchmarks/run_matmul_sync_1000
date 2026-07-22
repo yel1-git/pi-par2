@@ -1,0 +1,12 @@
+#!/bin/bash
+
+cd "$(dirname "$0")/.."
+OUT="benchmarks/output_sync/matmul_sync_1000.txt"
+echo "MatMul Parallel (sync-instrumented) N=1000 - $(date)" > "$OUT"
+
+for workers in 2 4 6 8 10 12 14 16 18 20 22 24 26 28; do
+    echo "=== $workers workers ===" >> "$OUT"
+    for ((i=0 ; i < 10 ; i++)); do
+        erl -noinput -eval "parMatMul_sync:run($workers, 1000), init:stop()." -pa benchmarks -pa runtime -pa generated_sync >> "$OUT" 2>&1
+    done
+done

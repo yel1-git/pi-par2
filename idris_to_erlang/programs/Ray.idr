@@ -4,7 +4,7 @@ import System
 import Data.String
 import Data.Maybe
 
--- Sequential port of nofib's parallel/ray/Main.lhs -- the ray tracer
+-- Direct sequential port of nofib's parallel/ray/Main.lhs -- the ray tracer
 -- from Paul Kelly's book, adapted by Greg Michaelson for SML,
 -- converted to (parallel) Haskell by Kevin Hammond
 -- (https://github.com/ghc/nofib/blob/master/parallel/ray/Main.lhs).
@@ -237,3 +237,5 @@ main = do
                  (_ :: d :: _) => fromMaybe 10 (parsePositive d)
                  _             => 10
   putStr (top detail 10.0 7.0 6.0 sc)
+
+-- run with something like: :exec putStr (top 100 10.0 7.0 6.0 sc)

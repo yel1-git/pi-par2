@@ -1,0 +1,5 @@
+#!/bin/bash
+# Quick sanity check for parCpi_sync -- small input, single run, 2 workers.
+
+cd "$(dirname "$0")/.."
+erl -noinput -eval "parCpi_sync:run(2, 10000), init:stop()." -pa benchmarks -pa runtime -pa generated_sync
