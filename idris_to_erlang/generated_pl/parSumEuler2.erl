@@ -4,7 +4,7 @@
 -import(play2, [process/1, app_stream/2, sync_stream/1, toPListWithChunk/3, syncPList/1]).
 
 gcd2(A,0) -> A;
-gcd2(A,B) -> A rem B.
+gcd2(A,B) -> gcd2(B, A rem B).
 
 relPrime(X,Y) -> gcd2(X,Y) == 1.
 

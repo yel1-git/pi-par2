@@ -47,9 +47,8 @@ STYLE_HANDLES = [
 ]
 
 STYLE_HANDLES_MERGED = [
-    mlines.Line2D([], [], color="black", linestyle="-", marker="o", label="overhead (left axis)"),
-    mlines.Line2D([], [], color="black", linestyle="--", marker="o", markerfacecolor="none", label="efficiency (mid-right axis)"),
-    mlines.Line2D([], [], color="black", linestyle=":", marker="o", markerfacecolor="none", label="speedup (outer-right axis)"),
+    mlines.Line2D([], [], color="black", linestyle="-", marker="o", label="speedup (left axis)"),
+    mlines.Line2D([], [], color="black", linestyle="--", marker="o", markerfacecolor="none", label="efficiency (right axis)"),
 ]
 
 
@@ -73,15 +72,11 @@ def plot_one_series(ax, ax2, path, label, color, marker):
     return line
 
 
-def plot_one_series_merged(ax, ax2, ax3, path, label, color, marker):
-    workers, overhead, efficiency, speedup = load(path)
-    line, = ax.plot(workers, overhead, marker=marker, color=color, label=label)
+def plot_one_series_merged(ax, ax2, path, label, color, marker):
+    workers, _overhead, efficiency, speedup = load(path)
+    line, = ax.plot(workers, speedup, marker=marker, color=color, label=label)
     ax2.plot(
         workers, efficiency, marker=marker, color=color, linestyle="--",
-        alpha=0.6, markerfacecolor="none", markersize=5,
-    )
-    ax3.plot(
-        workers, speedup, marker=marker, color=color, linestyle=":",
         alpha=0.6, markerfacecolor="none", markersize=5,
     )
     return line
@@ -103,22 +98,17 @@ def finish_axes(ax, ax2, series_handles, xlabel, ylabel_left, ylabel_right):
     )
 
 
-def format_axes_merged(ax, ax2, ax3, xlabel, ylabel_left, ylabel_mid, ylabel_outer):
-    ax3.spines["right"].set_position(("outward", 55))
-    ax3.set_frame_on(True)
-    ax3.patch.set_visible(False)
-
+def format_axes_merged(ax, ax2, xlabel, ylabel_left, ylabel_right):
     ax.set_xlabel(xlabel)
     ax.set_ylabel(ylabel_left)
-    ax2.set_ylabel(ylabel_mid)
-    ax3.set_ylabel(ylabel_outer)
+    ax2.set_ylabel(ylabel_right)
+    ax.set_ylim(bottom=0)
     ax2.set_ylim(bottom=0)
-    ax3.set_ylim(bottom=0)
     ax.grid(alpha=0.3)
 
 
-def finish_axes_merged(ax, ax2, ax3, series_handles, xlabel, ylabel_left, ylabel_mid, ylabel_outer):
-    format_axes_merged(ax, ax2, ax3, xlabel, ylabel_left, ylabel_mid, ylabel_outer)
+def finish_axes_merged(ax, ax2, series_handles, xlabel, ylabel_left, ylabel_right):
+    format_axes_merged(ax, ax2, xlabel, ylabel_left, ylabel_right)
     all_handles = series_handles + STYLE_HANDLES_MERGED
     ax.legend(
         handles=all_handles,
@@ -169,7 +159,6 @@ def plot_series(ax, csv_dir, base_name, chunk_sizes, style_map=None):
 
 def plot_series_merged(ax, csv_dir, base_name, chunk_sizes, add_legend=True, style_map=None):
     ax2 = ax.twinx()
-    ax3 = ax.twinx()
 
     handles = []
     configs = [("dynamic", None)] + [(f"chunk={c}", c) for c in chunk_sizes]
@@ -184,15 +173,12 @@ def plot_series_merged(ax, csv_dir, base_name, chunk_sizes, add_legend=True, sty
         else:
             color = COLORS[i % len(COLORS)]
             marker = MARKERS[i % len(MARKERS)]
-        handles.append(plot_one_series_merged(ax, ax2, ax3, path, label, color, marker))
+        handles.append(plot_one_series_merged(ax, ax2, path, label, color, marker))
 
     if add_legend:
-        finish_axes_merged(
-            ax, ax2, ax3, handles, "Workers",
-            "Overhead (proc-ms)", "Efficiency", "Speedup",
-        )
+        finish_axes_merged(ax, ax2, handles, "Workers", "Speedup", "Efficiency")
     else:
-        format_axes_merged(ax, ax2, ax3, "Workers", "Overhead (proc-ms)", "Efficiency", "Speedup")
+        format_axes_merged(ax, ax2, "Workers", "Speedup", "Efficiency")
     return handles
 
 
@@ -295,8 +281,8 @@ def shared_legend(fig, handles_lists):
 
 
 def fig_fib_merge():
-    fig, axes = plt.subplots(2, 1, figsize=(9, 11.5))
-    fig.suptitle("Fib Overhead, Efficiency & Speedup")
+    fig, axes = plt.subplots(2, 1, figsize=(10, 9.5))
+    fig.suptitle("Fib Efficiency & Speedup")
 
     chunk_lists = [[1, 10, 20, 35], [1, 100, 200, 350]]
     style_map = build_style_map(chunk_lists)
@@ -314,30 +300,28 @@ def fig_fib_merge():
 
 
 def fig_cpi_merge():
-    fig, ax = plt.subplots(figsize=(9, 6.5))
+    fig, ax = plt.subplots(figsize=(10, 5.6))
     ax2 = ax.twinx()
-    ax3 = ax.twinx()
 
     handles = []
     for i, n in enumerate([1000000, 10000000, 100000000, 1000000000]):
         color = COLORS[i % len(COLORS)]
         marker = MARKERS[i % len(MARKERS)]
         handles.append(
-            plot_one_series_merged(ax, ax2, ax3, CSV_DIR / f"cpi_{n}.csv", f"N={n}", color, marker)
+            plot_one_series_merged(ax, ax2, CSV_DIR / f"cpi_{n}.csv", f"N={n}", color, marker)
         )
 
-    ax.set_title("CPI - Overhead, Efficiency & Speedup vs Workers")
+    ax.set_title("CPI - Efficiency & Speedup vs Workers")
     finish_axes_merged(
-        ax, ax2, ax3, handles, "Number of Workers",
-        "Overhead (proc-ms)", "Efficiency", "Speedup",
+        ax, ax2, handles, "Number of Workers", "Speedup", "Efficiency",
     )
     fig.savefig(OUT_DIR / "cpi_merge.png", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
 def fig_matmul_merge():
-    fig, axes = plt.subplots(2, 2, figsize=(13, 10))
-    fig.suptitle("MatMul Overhead, Efficiency & Speedup")
+    fig, axes = plt.subplots(2, 2, figsize=(14, 8.5))
+    fig.suptitle("MatMul Efficiency & Speedup")
 
     configs = [
         ("matmul_500", [1, 10, 17]),
@@ -360,26 +344,24 @@ def fig_matmul_merge():
 
 
 def fig_queens_12_merge():
-    fig, ax = plt.subplots(figsize=(9, 6.5))
+    fig, ax = plt.subplots(figsize=(10, 5.6))
     ax2 = ax.twinx()
-    ax3 = ax.twinx()
 
     handle = plot_one_series_merged(
-        ax, ax2, ax3, CSV_DIR / "queens_12.csv", "dynamic", COLORS[0], MARKERS[0]
+        ax, ax2, CSV_DIR / "queens_12.csv", "dynamic", COLORS[0], MARKERS[0]
     )
 
-    ax.set_title("queens_12 - Overhead, Efficiency & Speedup vs Workers")
+    ax.set_title("queens_12 - Efficiency & Speedup vs Workers")
     finish_axes_merged(
-        ax, ax2, ax3, [handle], "Number of Workers",
-        "Overhead (proc-ms)", "Efficiency", "Speedup",
+        ax, ax2, [handle], "Number of Workers", "Speedup", "Efficiency",
     )
     fig.savefig(OUT_DIR / "queens_12_merge.png", dpi=150, bbox_inches="tight")
     plt.close(fig)
 
 
 def fig_sumeuler_merge():
-    fig, axes = plt.subplots(2, 2, figsize=(13, 10))
-    fig.suptitle("SumEuler Overhead, Efficiency & Speedup")
+    fig, axes = plt.subplots(2, 2, figsize=(14, 8.5))
+    fig.suptitle("SumEuler Efficiency & Speedup")
 
     configs = [10000, 20000, 40000]
     style_map = build_style_map([[1, 50, 100, 250]])

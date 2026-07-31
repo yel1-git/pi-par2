@@ -53,8 +53,10 @@ computeChunk({Chunk, MatB}) ->
 % computeChunk({Chunk, MatB}) ->
 %    multiply_row_by_col(Chunk, MatB).
 
+%% MatB arrives ALREADY TRANSPOSED, so that -- as in multiply/3 and run_seq/1,
+%% and as in the Elysium farm -- the O(n^2) transpose sits outside the timed
+%% region and both baselines are charged for the same work.
 parMatMul(ChunkSize, MatA, MatB) ->
-    % TransposedB = transpose1(ChunkSize, MatB),
     F = fun(Chunk) -> ?MODULE:computeChunk({Chunk, MatB}) end,
     PList = toPListWithChunk(F, ChunkSize, MatA),
     Results = syncPList(PList),
@@ -70,7 +72,7 @@ run(Nw, Size) ->
     erlang:system_flag(schedulers_online, Nw),
     Row = rangeFrom(1, Size),
     MatA = mkRandomMatrix(Size),
-    MatB = MatA,
+    MatB = transpose1(MatA),
     ChunkSize = Size div Nw,
     io:format("MatMul ~p workers: ~p~n", [Nw, sk_profile:benchmark(fun parMatMul/3, [ChunkSize, MatA, MatB], 1)]).
 
