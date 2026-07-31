@@ -1,0 +1,76 @@
+% ---------------------------------------------------------------------------
+% Overhead-decomposition analysis for the sync-instrumented runs.
+% Drop this into sn-article.tex at the end of Section~\ref{sec:results}
+% (just before \section{Related Work}). Requires the figure
+% figures/sync_overhead.png (produced by benchmarks/plot_sync.py) and the
+% numbers from benchmarks/csv_sync/*.csv (produced by aggregate_sync.py).
+% ---------------------------------------------------------------------------
+
+\subsection{Analysis of Overhead}\label{sec:overhead-analysis}
+
+The speedup figures above show \emph{how well} each benchmark scales, but not
+\emph{where} the parallel overhead is spent. To decompose it, we re-ran the
+three largest workloads --- computational $\pi$ ($10^8$), SumEuler
+($4\times10^4$) and matrix multiplication ($4000^2$) --- against an instrumented
+copy of the runtime that records, per run, the time each worker spends inside
+the user function (\emph{aggregate compute}), the time the coordinator spends
+blocked at the \lstinline{syncPList} barrier (\emph{sync wait}), the process
+spawn time, the volume of data copied between processes, and the peak
+Erlang process-heap footprint sampled every $20$\,ms. Because the instrumentation
+itself perturbs timing, we use these runs only for the \emph{ratios} in
+\cref{tab:overhead} and \cref{fig:sync-overhead}; the speedups reported earlier come from
+the uninstrumented runtime.
+
+\begin{table}
+\centering
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{|l|c|c|c|c|c|c|}
+\hline
+Benchmark & Workers & Aggr.\ compute (s) & Sync frac. & Spawn (s) & Msg (MB) & Mem peak (GB) \\
+\hline
+$\pi$ $10^8$           & 12 & 22.26  & 0.17 & 0.001  & 500.0 & 7.65 \\
+SumEuler $4\times10^4$ & 28 & 32.87  & 0.99 & 0.0003 & 0.20  & 0.06 \\
+Matmul $4000^2$        & 28 & 8216.3 & 0.88 & 37.36  & 67.8  & 13.46 \\
+\hline
+\end{tabular}%
+}
+\caption{Overhead decomposition at each benchmark's peak-speedup worker count
+(cf.\ \cref{tab:runtimes}). \emph{Aggr.\ compute} is worker time inside the user
+function summed over all workers; \emph{Sync frac.} is coordinator barrier-wait
+time as a fraction of wall time; \emph{Spawn} is the total time spent spawning
+worker processes per run; \emph{Msg} is data copied between processes per
+run; \emph{Mem peak} is the peak process-heap footprint. Means over 10 runs.}
+\label{tab:overhead}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=0.99\textwidth]{figures/sync_overhead.png}
+\caption{Process-memory peak (solid, left axis, note the per-panel scale) and
+sync-barrier fraction $\mathit{wait}/\mathit{wall}$ (dashed, right axis) against
+worker count for the three instrumented workloads.}
+\label{fig:sync-overhead}
+\end{figure}
+
+Three observations follow. First, aggregate compute is essentially invariant to
+the worker count (e.g.\ SumEuler stays at $27$--$33$\,s across $2$--$28$ workers),
+confirming that the \lstinline{PList} model divides a fixed body of work rather
+than duplicating it; the mild rise at high worker counts (MatMul grows
+$\sim\!19\%$ from $2$ to $28$ workers) is scheduler and garbage-collection
+contention. Second, the sync fraction distinguishes the scaling regimes visible
+in \cref{fig:sync-overhead}: for SumEuler and MatMul it stays near unity, meaning the
+coordinator is a thin barrier and the workers are saturated, whereas for
+computational $\pi$ it collapses from $0.61$ at two workers to under $0.09$ by
+$28$ --- the coordinator runs out of parallel work to wait for. This, together
+with the wall-clock time flattening at $\sim\!10$\,s beyond ten workers, is the
+signature of a sequential fraction (range materialisation, the $500$\,MB input
+message, and the final reduction) dominating, and accounts for the $\pi$ plateau
+noted in \cref{fig:cpi} without appeal to cache behaviour. Third, the copy-based
+message-passing model carries a memory cost the speedup plots do not expose:
+SumEuler's footprint is negligible ($19$--$63$\,MB) and grows gently with workers,
+but MatMul rises to $13.5$\,GB --- each worker closure captures a copy of matrix
+$B$, which also drives its spawn time to $37$\,s at $28$ workers --- and
+computational $\pi$ sits at $7$--$12$\,GB, dominated by a single $500$\,MB range
+message. Reducing these costs, by streaming input rather than materialising and
+copying whole \lstinline{Vect}s and by overlapping the final reduction with
+computation, is a natural direction for future work.

@@ -1,0 +1,77 @@
+#!/usr/bin/env bash
+#
+# run_chunk_sweep -- fixed-chunk-size sweeps for SumEuler and MatMul.
+#
+# Table 1 reports each benchmark's best speedup over ALL chunk sizes, and the
+# figures plot one curve per chunk size, but the repo only ever had run scripts
+# for the *dynamic* chunking (ChunkSize = Size div Nw). The chunk variants in
+# output2/ were produced by hand. This script reproduces them with the same
+# naming the parser expects:
+#
+#     output/<bench>_par_<size>_chunk_<c>.txt
+#
+# It mirrors parSumEuler2:run/2 and parMatMul:run/2 exactly -- same schedulers,
+# same input construction, same sk_profile call -- but with an explicit chunk
+# size instead of Size div Nw.
+#
+# Usage:  ./run_chunk_sweep sumeuler 40000 1 50 100 250
+#         ./run_chunk_sweep matmul   2000  1 10 20 35 50 70
+#         ./run_chunk_sweep all              # every sweep the paper needs
+#
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+WORKERS="${WORKERS:-2 4 6 8 10 12 14 16 18 20 22 24 26 28}"
+REPS="${REPS:-10}"
+OUTDIR="benchmarks/output"
+mkdir -p "$OUTDIR"
+
+sweep () {
+  local bench=$1 size=$2; shift 2
+  for c in "$@"; do
+    local f="$OUTDIR/${bench}_par_${size}_chunk_${c}.txt"
+    echo "${bench} Parallel N=${size} chunk=${c} - $(date)" > "$f"
+    echo ">>> $bench $size chunk=$c"
+    for nw in $WORKERS; do
+      echo "=== $nw workers ===" >> "$f"
+      for ((i=0; i<REPS; i++)); do
+        case $bench in
+          sumeuler)
+            erl -noinput -pa benchmarks -eval "
+              erlang:system_flag(schedulers_online, $nw),
+              L = parSumEuler2:mkList($size),
+              io:format(\"SumEuler $nw workers: ~p~n\",
+                [sk_profile:benchmark(fun parSumEuler2:parSumEuler/2, [$c, L], 1)]),
+              init:stop()." >> "$f" 2>&1
+            ;;
+          matmul)
+            erl -noinput -pa benchmarks -eval "
+              erlang:system_flag(schedulers_online, $nw),
+              A = parMatMul:mkRandomMatrix($size),
+              Bt = parMatMul:transpose1(A),
+              io:format(\"MatMul $nw workers: ~p~n\",
+                [sk_profile:benchmark(fun parMatMul:parMatMul/3, [$c, A, Bt], 1)]),
+              init:stop()." >> "$f" 2>&1
+            ;;
+          *) echo "unknown benchmark: $bench" >&2; exit 1 ;;
+        esac
+      done
+      echo "    $bench $size chunk=$c @ $nw workers done"
+    done
+    echo "    -> $f"
+  done
+}
+
+if [ "${1:-}" = all ]; then
+  sweep sumeuler 10000 1 50 100 250
+  sweep sumeuler 20000 1 50 100 250
+  sweep sumeuler 40000 1 50 100 250
+  sweep matmul   500   1 10 17
+  sweep matmul   1000  1 10 20 35
+  sweep matmul   2000  1 10 20 35 50 70
+  sweep matmul   4000  50
+else
+  sweep "$@"
+fi
+
+echo "DONE. Now: python3 benchmarks/parse_output.py --outdir csv2"
