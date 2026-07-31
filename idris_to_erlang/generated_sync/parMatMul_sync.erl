@@ -44,6 +44,8 @@ rangeFrom(Start, K) when K > 0 -> [Start | rangeFrom(Start+1, K-1)].
 computeChunk({Chunk, MatB}) ->
    lists:map(fun(Row) -> multiply_row_by_col(Row, MatB) end, Chunk).
 
+%% MatB arrives ALREADY TRANSPOSED, so that -- as in multiply/3 and run_seq/1 --
+%% the O(n^2) transpose sits outside the profiled region.
 parMatMul(ChunkSize, MatA, MatB) ->
     F = fun(Chunk) -> ?MODULE:computeChunk({Chunk, MatB}) end,
     PList = toPListWithChunk(F, ChunkSize, MatA),
@@ -58,7 +60,7 @@ run(Nw, Size) ->
     erlang:system_flag(schedulers_online, Nw),
     Row = rangeFrom(1, Size),
     MatA = mkRandomMatrix(Size),
-    MatB = MatA,
+    MatB = transpose1(MatA),
     ChunkSize = Size div Nw,
     {BenchResult, SyncStats} = play_sync:profile(fun() ->
         sk_profile:benchmark(fun parMatMul/3, [ChunkSize, MatA, MatB], 1)
