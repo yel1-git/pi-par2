@@ -92,12 +92,6 @@ listAppendMonoid : Monoid (List a) (++) []
 listAppendMonoid = MkMonoid appendAssociative (\_ => Refl) appendNilRightNeutral
 
 
--- g/ident are declared explicitly here (not left to auto-binding) because a
--- `let` on the right-hand side referencing an auto-bound implicit fails with
--- "g is not accessible in this context" -- an Idris2 elaboration quirk
--- distinct from (but in the same family as) the `rewrite`-in-`where` gotcha
--- noted elsewhere in this file. Declaring them explicitly sidesteps it
--- without changing the implicit call convention at any call site.
 public export
 foldlGen : {a : Type} -> {t : Type} -> {g : t -> t -> t} -> {ident : t}
         -> Monoid t g ident -> (h : a -> t) -> (z : t) -> (xs : List a)
@@ -118,11 +112,6 @@ foldlFoldrAgree mon h xs =
   in trans p1 p2
 
 
--- {a} declared explicitly (not auto-bound) -- foldlFoldrAgree now declares its
--- own implicits explicitly (see the comment above foldlGen), and an
--- auto-bound implicit at a call site isn't reliably resolved against an
--- explicitly-declared one on the callee: same family of gotcha, one call
--- removed.
 public export
 concatEqualsFoldrAppend : {a : Type} -> (xss : List (List a)) -> concat xss = foldr (++) [] xss
 concatEqualsFoldrAppend xss = foldlFoldrAgree listAppendMonoid id xss
@@ -130,19 +119,13 @@ concatEqualsFoldrAppend xss = foldlFoldrAgree listAppendMonoid id xss
 
 
 -- foldr (\x,acc => g (h x) acc) ident xs and foldr g ident (map h xs) compute
--- the same thing, for ANY g/ident (generalises QueensProof's own
--- foldrMapFoldr, which is this specialised to g=(++), ident=[])
+-- the same thing.
 public export
 foldrMapAgree : {g : t -> t -> t} -> {ident : t} -> (h : a -> t) -> (xs : List a)
              -> foldr (\x, acc => g (h x) acc) ident xs = foldr g ident (mapImpl h xs)
 foldrMapAgree h [] = Refl
 foldrMapAgree h (x :: xs) = cong (g (h x)) (foldrMapAgree h xs)
 
--- folding over an already-mapped list agrees with fusing the map into the
--- fold's step function -- needed because a "map then fold" definition (e.g.
--- SumEuler's `sum (map euler chunk)`) unfolds to `foldl g z (map h xs)`,
--- NOT to foldlGen/foldlFoldrAgree's fused-per-step shape; those two foldl
--- forms are only propositionally, not definitionally, equal.
 public export
 foldlMapFusionGen : (g : t -> t -> t) -> (h : a -> t) -> (z : t) -> (xs : List a)
                   -> foldl g z (mapImpl h xs) = foldl (\acc, x => g acc (h x)) z xs
