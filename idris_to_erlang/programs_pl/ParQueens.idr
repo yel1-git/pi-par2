@@ -42,9 +42,11 @@ mkMsg : Int -> List Int -> List (Int, Int)
 mkMsg s [] = []
 mkMsg s (x :: xs) = (s, x) :: mkMsg s xs
 
+public export
 computeChunk : List (Int, Int) -> List (List Int)
-computeChunk chunk = concatMap (\(s,m) => search s m) chunk
+computeChunk chunk = concatMap (uncurry search) chunk
 
+public export
 parQueens : Nat -> List (Int, Int) -> List (List Int)
 parQueens k input =
   let plist = toPListWithChunk computeChunk k input

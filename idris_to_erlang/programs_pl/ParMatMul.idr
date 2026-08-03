@@ -37,9 +37,11 @@ rangeFrom : Int -> (n : Nat) -> Vect n Int
 rangeFrom start 0     = []
 rangeFrom start (S k) = start :: rangeFrom (start + 1) k
 
+public export
 computeChunk : (List (Vect n Int), Vect n (Vect n Int)) -> List (Vect n Int)
 computeChunk (chunk, matB) = map (\row => multiply_row_by_col row matB) chunk
 
+public export
 parMatMul : (chunkSize : Nat) -> (n : Nat) -> (matA : List (Vect n Int)) -> (matB : Vect n (Vect n Int)) -> List (Vect n Int)
 parMatMul chunkSize n matA matB =
   let transposedB = transpose1 n matB

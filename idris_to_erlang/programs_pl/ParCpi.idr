@@ -19,6 +19,7 @@ index2 i n = index i / cast n
 cpi : Integer -> Double
 cpi n = mapRedr (+) 0 (\i => f (index2 i n)) [1..n] / cast n
 
+public export
 computeChunk : List Integer -> Integer -> Double
 computeChunk Nil n = 0
 computeChunk (i :: is) n =
@@ -26,6 +27,7 @@ computeChunk (i :: is) n =
   let val = 4.0 / (1.0 + x * x) / cast n in
   val + computeChunk is n
 
+public export
 parCpi : Nat -> Integer -> List Integer -> Double
 parCpi k n xs =
   let f = \chunk => computeChunk chunk n

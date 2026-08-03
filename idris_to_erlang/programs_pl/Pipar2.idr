@@ -244,19 +244,28 @@ data PList : (a : Type)
 -- split list into N chunks
 public export
 splitChunk : Nat -> List a -> List(List a)
+splitChunk k [] = []
 splitChunk k xs = case splitAt k xs of
       (chunk, []) => [chunk]
       (chunk, rest) => chunk :: splitChunk k rest
+
+-- structural flatten, used instead of Prelude's Foldable-derived `concat`
+-- (which goes via foldl/foldMap and is much harder to reason about equationally)
+public export
+listConcat : List (List a) -> List a
+listConcat [] = []
+listConcat (c :: cs) = c ++ listConcat cs
 
 -- create PList with chunks
 -- each chunk is processed by a separate worker
 public export
 toPListWithChunk : (List a -> b) -> Nat -> List a -> PList b Flat
+toPListWithChunk f k [] = PNil
 toPListWithChunk f k xs = case splitChunk k xs of
   Nil => PNil
   (chunk :: chunks) =>
     let procChunk = proc (\y => y) <#> f chunk
-    in PCons procChunk (toPListWithChunk f k (concat chunks))
+    in PCons procChunk (toPListWithChunk f k (listConcat chunks))
 
 public export
 syncPList : PList a chkd -> List a
