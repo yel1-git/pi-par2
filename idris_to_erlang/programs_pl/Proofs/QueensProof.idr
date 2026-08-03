@@ -1,8 +1,8 @@
-module QueensProof
+module Proofs.QueensProof
 
 import Data.List
 import Pipar2
-import ProofLib
+import Proofs.ProofLib
 import ParQueens
 
 

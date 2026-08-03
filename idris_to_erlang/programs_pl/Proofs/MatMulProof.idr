@@ -1,9 +1,9 @@
-module MatMulProof
+module Proofs.MatMulProof
 
 import Data.List
 import Data.Vect
 import Pipar2
-import ProofLib
+import Proofs.ProofLib
 import ParMatMul
 
 -- mapping g over an append is the same as 

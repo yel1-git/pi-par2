@@ -1,8 +1,8 @@
-module CpiProof
+module Proofs.CpiProof
 
 import Data.List
 import Pipar2
-import ProofLib
+import Proofs.ProofLib
 import ParCpi
 
 public export
@@ -22,7 +22,7 @@ computeChunkMirror n (i :: is) =
 -- IEEE-754 Double
 -- addition is NOT associative under rounding.
 -- we assume associativity holds for (+) over doubles here. 
-
+-- make this an assumption.
 public export
 doubleAddMonoid : Monoid Double (+) 0
 doubleAddMonoid = MkMonoid (\x, y, z => believe_me ()) (\x => believe_me ()) (\x => believe_me ())

@@ -25,9 +25,11 @@ public export
 sumEuler : Int -> Int
 sumEuler n = sum (map euler (mkList n))
 
+public export
 computeChunk : List Int -> Int
 computeChunk chunk = sum (map euler chunk)
 
+public export
 parSumEuler : Nat -> List Int -> Int
 parSumEuler k input =
   let plist = toPListWithChunk computeChunk k input

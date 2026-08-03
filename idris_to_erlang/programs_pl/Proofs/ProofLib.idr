@@ -1,4 +1,4 @@
-module ProofLib
+module Proofs.ProofLib
 
 import Data.List
 import Pipar2
@@ -129,8 +129,28 @@ concatEqualsFoldrAppend xss = foldlFoldrAgree listAppendMonoid id xss
 
 
 
-public export 
-splitAtAppend : (n : Nat) 
+-- foldr (\x,acc => g (h x) acc) ident xs and foldr g ident (map h xs) compute
+-- the same thing, for ANY g/ident (generalises QueensProof's own
+-- foldrMapFoldr, which is this specialised to g=(++), ident=[])
+public export
+foldrMapAgree : {g : t -> t -> t} -> {ident : t} -> (h : a -> t) -> (xs : List a)
+             -> foldr (\x, acc => g (h x) acc) ident xs = foldr g ident (mapImpl h xs)
+foldrMapAgree h [] = Refl
+foldrMapAgree h (x :: xs) = cong (g (h x)) (foldrMapAgree h xs)
+
+-- folding over an already-mapped list agrees with fusing the map into the
+-- fold's step function -- needed because a "map then fold" definition (e.g.
+-- SumEuler's `sum (map euler chunk)`) unfolds to `foldl g z (map h xs)`,
+-- NOT to foldlGen/foldlFoldrAgree's fused-per-step shape; those two foldl
+-- forms are only propositionally, not definitionally, equal.
+public export
+foldlMapFusionGen : (g : t -> t -> t) -> (h : a -> t) -> (z : t) -> (xs : List a)
+                  -> foldl g z (mapImpl h xs) = foldl (\acc, x => g acc (h x)) z xs
+foldlMapFusionGen g h z [] = Refl
+foldlMapFusionGen g h z (x :: xs) = foldlMapFusionGen g h (g z (h x)) xs
+
+public export
+splitAtAppend : (n : Nat)
              -> (xs : List a) 
              -> (ys, zs : List a) 
              -> (prf : splitAt n xs = (ys, zs)) 
